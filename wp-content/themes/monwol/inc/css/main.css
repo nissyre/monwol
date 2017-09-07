@@ -1,0 +1,320 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    color: gray;
+    font-family: Cambria, Georgia, serif;
+}
+
+.header {
+    padding-top: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 95%;
+    overflow: hidden;
+    display:table-row;
+}
+
+.header-logo {
+    width: 45%;
+    display: table-cell;
+
+}
+.header-menu {
+    width: 55%;
+    margin-top: 10px;
+    font-weight: bold;  
+    display: table-cell;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-menu {
+    font-weight: bold;    
+}
+
+.menu-main-container {    
+    height: inherit;
+    position: relative;
+}
+
+.menu {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+ul.menu {
+    height: 85%;
+    position: relative;   
+    margin-top: 10px;
+}
+
+.menu li {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    position: relative;   
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #232f5c;
+}
+
+.menu a:hover {
+    color: #494948;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+    min-height: 400px;
+}
+
+.home-separator {
+    height: 25px;
+}
+
+.home-banner {
+    height: 150px;
+}
+
+.home-images {
+    overflow: hidden;
+}
+
+.home-post {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 31%;   
+    display: inline-table;
+    min-height: 350px;
+    position: relative;
+}
+
+
+.home-post {
+    width: 31%; 
+}  
+
+
+.home-post-img {
+
+}
+
+.home-post-img img {
+    width: 100%;
+    min-height: 300px; 
+    border-radius: 5%;
+    filter: brightness(100%);
+}
+
+.home-post-img img:hover {
+    filter: brightness(120%);
+}
+.home-post-header {
+    font-size: 24px;
+}
+.home-post-content {
+    font-size: 18px;
+} 
+
+.footer {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+
+}
+
+
+.footer-copyrights {
+    width: 65%;
+    float: left;
+    font-size: 12px;
+    vertical-align: bottom;
+}
+.footer-contact {
+    margin-left: 65%;
+    overflow: hidden;
+}
+
+.footer-contact table {
+    width: 100%;
+}
+
+.footer-contact-left {
+    width: 80%;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.footer-contact-right {
+    text-align: left;
+    font-size: 16px;
+    text-decoration-style: solid;
+    font-weight: bold;
+}
+
+
+.single-post {
+    width: 100%;
+    position: relative;
+
+}
+
+.single-post img {
+    width: 100%;
+    border-radius: 5%;
+
+}
+
+.single-post-header {
+    text-align: center;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+
+.single-post-content {
+    position: absolute;
+    color: #999;
+    float: right;
+    width: 85%;
+    min-height: 200px;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: black;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    z-index: 10000;
+    border: solid 3px darkgray;
+    font-size: 13.2px;
+}
+
+.single-post-content h3 {
+    font-weight:normal;
+}
+
+.about-us {
+    font-size: 20px;
+}
+
+.realization-post {
+    width: 100%;
+    display: flex;
+    border-radius: 1.2em;
+    border: solid 4px;
+    border-color: #494948;
+    padding: 15px 25px;
+}
+
+.realization-post-img {
+    overflow: hidden;
+    width: 35%;
+    float: left;
+}
+
+.realization-post-img img {
+    border-radius: 0.8em;
+}
+
+.realization-post-content {
+    padding-left: 15px;
+    width: 65%;
+    float: left;
+}
+
+.contact-form {
+    display: table-row;
+}
+
+.contact-form-header {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    float: top;
+}
+
+.contact-form-form {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    display: table-cell;
+}
+
+.contact-form-separator {
+    height: 35px;
+}
+
+.contact-form-data {
+    font-size: 26px;
+    text-align: left;
+}
+
+
+.contact-form-form input {
+    margin: 10px;
+    width: 80%;
+    border-radius: 0.4em;
+    border-color: grey;
+    border-width: 2px;
+    padding: 3px;
+
+}
+
+.contact-form-form  textarea {
+    margin: 10px;
+    border-radius: 0.4em;
+    border-color: grey;
+    width: 80%;
+    min-height: 100px;
+}
+
+.contact-form-form input.button {
+    width: 20%;
+    height: auto;
+    min-height: 25px;
+}
+
+
+.contact-form-form input.small  {
+    float: left;
+    width: 50%;
+}
+
+.contact-form-img {
+    float: left;
+    width: 50%;  
+    display: table-cell;
+}
+
+.contact-form-img img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0.8em;
+    width:100%;
+    height: auto;
+
+}
+
+.realization-post-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+
