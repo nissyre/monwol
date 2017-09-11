@@ -8,7 +8,7 @@ get_header();
     <div class="home-images">
         <?php
        
-        $posts = get_posts(F);
+        $posts = get_posts();
         foreach ($posts as $p) : setup_postdata($p);
             ?>
             <div class="home-post"> 

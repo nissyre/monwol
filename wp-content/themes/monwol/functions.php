@@ -9,6 +9,7 @@
 add_theme_support('post-thumbnails');
 
 function themeslug_enqueue_style() {
+    //wp_enqueue_style('main', get_template_directory_uri() . '/inc/css/normalize.css', false);
     wp_enqueue_style('main', get_template_directory_uri() . '/inc/css/main.css', false);
 }
 
