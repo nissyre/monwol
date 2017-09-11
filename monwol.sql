@@ -1,30 +1,11 @@
-﻿-- phpMyAdmin SQL Dump
--- version 4.2.11
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Czas generowania: 11 Wrz 2017, 15:49
--- Wersja serwera: 5.6.21
--- Wersja PHP: 5.6.3
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
---
--- Baza danych: `monwol`
---
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_commentmeta`
---
 
 CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
 `meta_id` bigint(20) unsigned NOT NULL,
@@ -32,12 +13,6 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_comments`
---
 
 CREATE TABLE IF NOT EXISTS `wp_comments` (
 `comment_ID` bigint(20) unsigned NOT NULL,
@@ -57,18 +32,8 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
   `user_id` bigint(20) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
---
--- Zrzut danych tabeli `wp_comments`
---
-
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 (1, 1, 'Komentator WordPress', 'wapuu@wordpress.example', 'https://wordpress.org/', '', '2017-09-07 20:11:04', '2017-09-07 18:11:04', 'Cześć, to jest komentarz.\nAby zapoznać się z moderowaniem, edycją i usuwaniem komentarzy, należy odwiedzić ekran Komentarze w kokpicie.\nAwatary komentujących pochodzą z <a href="https://pl.gravatar.com">Gravatara</a>.', 0, 'post-trashed', '', '', 0, 0);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_links`
---
 
 CREATE TABLE IF NOT EXISTS `wp_links` (
 `link_id` bigint(20) unsigned NOT NULL,
@@ -86,22 +51,12 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
   `link_rss` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_options`
---
-
 CREATE TABLE IF NOT EXISTS `wp_options` (
 `option_id` bigint(20) unsigned NOT NULL,
   `option_name` varchar(191) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `option_value` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `autoload` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes'
 ) ENGINE=InnoDB AUTO_INCREMENT=139 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Zrzut danych tabeli `wp_options`
---
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://localhost/monwol', 'yes'),
@@ -236,22 +191,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (137, 'theme_mods_monwol', 'a:2:{i:0;b:0;s:18:"custom_css_post_id";i:-1;}', 'yes'),
 (138, 'theme_switched', '', 'yes');
 
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_postmeta`
---
-
 CREATE TABLE IF NOT EXISTS `wp_postmeta` (
 `meta_id` bigint(20) unsigned NOT NULL,
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Zrzut danych tabeli `wp_postmeta`
---
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (1, 2, '_wp_page_template', 'default'),
@@ -299,12 +244,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (43, 1, '_wp_desired_post_slug', 'witaj-swiecie'),
 (44, 1, '_wp_trash_meta_comments_status', 'a:1:{i:1;s:1:"1";}');
 
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_posts`
---
-
 CREATE TABLE IF NOT EXISTS `wp_posts` (
 `ID` bigint(20) unsigned NOT NULL,
   `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -331,10 +270,6 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   `comment_count` bigint(20) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
---
--- Zrzut danych tabeli `wp_posts`
---
-
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2017-09-07 20:11:04', '2017-09-07 18:11:04', 'Witaj w WordPressie. To jest twój pierwszy wpis. Zmodyfikuj go lub usuń, a następnie rozpocznij pisanie!', 'Witaj, świecie!', '', 'trash', 'open', 'open', '', 'witaj-swiecie__trashed', '', '', '2017-09-07 20:48:15', '2017-09-07 18:48:15', '', 0, 'http://localhost/monwol/?p=1', 0, 'post', '', 1),
 (2, 1, '2017-09-07 20:11:04', '2017-09-07 18:11:04', 'To jest przykładowa strona. Strony są inne niż wpisy na blogu, ponieważ nie tylko znajdują się zawsze w jednym miejscu, ale także pojawiają się w menu witryny (w większości motywów). Większość użytkowników umieszcza na swoich witrynach stronę z informacjami o sobie, dzięki którym przedstawiają się odwiedzającym ich witrynę. Taka strona może zawierać na przykład taki tekst:\n\n<blockquote>Cześć! Za dnia jestem gońcem, a nocą próbuję swoich sił w aktorstwie. To jest moja witryna. Mieszkam w Los Angeles, mam wspaniałego psa, który wabi się Jack i lubię pi&#241;a coladę (a także spacery, gdy pada deszcz).</blockquote>\n\n... lub taki:\n\n<blockquote>Firma Wihajstry XYZ została założona w 1971 roku i od początku swojego istnienia zajmuje się produkcją najlepszych wihajstrów. W naszej siedzibie w Gotham City pracuje ponad 2000 osób, które zajmują się robieniem całej masy fantastycznych rzeczy dla mieszkańców Gotham.</blockquote>\n\nJako nowy użytkownik WordPressa powinieneś przejść do <a href="http://localhost/monwol/wp-admin/">swojego kokpitu</a>, aby usunąć tę stronę i utworzyć nowe strony z własną treścią. Baw się dobrze!', 'Przykładowa strona', '', 'trash', 'closed', 'open', '', 'przykladowa-strona__trashed', '', '', '2017-09-07 20:44:03', '2017-09-07 18:44:03', '', 0, 'http://localhost/monwol/?page_id=2', 0, 'page', '', 0),
@@ -346,24 +281,12 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (8, 1, '2017-09-07 20:44:03', '2017-09-07 18:44:03', 'To jest przykładowa strona. Strony są inne niż wpisy na blogu, ponieważ nie tylko znajdują się zawsze w jednym miejscu, ale także pojawiają się w menu witryny (w większości motywów). Większość użytkowników umieszcza na swoich witrynach stronę z informacjami o sobie, dzięki którym przedstawiają się odwiedzającym ich witrynę. Taka strona może zawierać na przykład taki tekst:\n\n<blockquote>Cześć! Za dnia jestem gońcem, a nocą próbuję swoich sił w aktorstwie. To jest moja witryna. Mieszkam w Los Angeles, mam wspaniałego psa, który wabi się Jack i lubię pi&#241;a coladę (a także spacery, gdy pada deszcz).</blockquote>\n\n... lub taki:\n\n<blockquote>Firma Wihajstry XYZ została założona w 1971 roku i od początku swojego istnienia zajmuje się produkcją najlepszych wihajstrów. W naszej siedzibie w Gotham City pracuje ponad 2000 osób, które zajmują się robieniem całej masy fantastycznych rzeczy dla mieszkańców Gotham.</blockquote>\n\nJako nowy użytkownik WordPressa powinieneś przejść do <a href="http://localhost/monwol/wp-admin/">swojego kokpitu</a>, aby usunąć tę stronę i utworzyć nowe strony z własną treścią. Baw się dobrze!', 'Przykładowa strona', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-09-07 20:44:03', '2017-09-07 18:44:03', '', 2, 'http://localhost/monwol/2017/09/07/2-revision-v1/', 0, 'revision', '', 0),
 (9, 1, '2017-09-07 20:48:15', '2017-09-07 18:48:15', 'Witaj w WordPressie. To jest twój pierwszy wpis. Zmodyfikuj go lub usuń, a następnie rozpocznij pisanie!', 'Witaj, świecie!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2017-09-07 20:48:15', '2017-09-07 18:48:15', '', 1, 'http://localhost/monwol/2017/09/07/1-revision-v1/', 0, 'revision', '', 0);
 
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_termmeta`
---
-
 CREATE TABLE IF NOT EXISTS `wp_termmeta` (
 `meta_id` bigint(20) unsigned NOT NULL,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_terms`
---
 
 CREATE TABLE IF NOT EXISTS `wp_terms` (
 `term_id` bigint(20) unsigned NOT NULL,
@@ -372,18 +295,8 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   `term_group` bigint(10) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
---
--- Zrzut danych tabeli `wp_terms`
---
-
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (1, 'Bez kategorii', 'bez-kategorii', 0);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_term_relationships`
---
 
 CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   `object_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -391,18 +304,8 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   `term_order` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
---
--- Zrzut danych tabeli `wp_term_relationships`
---
-
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 (1, 1, 0);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_term_taxonomy`
---
 
 CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 `term_taxonomy_id` bigint(20) unsigned NOT NULL,
@@ -413,18 +316,8 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   `count` bigint(20) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
---
--- Zrzut danych tabeli `wp_term_taxonomy`
---
-
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 0);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_usermeta`
---
 
 CREATE TABLE IF NOT EXISTS `wp_usermeta` (
 `umeta_id` bigint(20) unsigned NOT NULL,
@@ -432,10 +325,6 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Zrzut danych tabeli `wp_usermeta`
---
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 (1, 1, 'nickname', 'gc_monwol'),
@@ -458,12 +347,6 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (18, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
 (19, 1, 'metaboxhidden_nav-menus', 'a:1:{i:0;s:12:"add-post_tag";}');
 
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `wp_users`
---
-
 CREATE TABLE IF NOT EXISTS `wp_users` (
 `ID` bigint(20) unsigned NOT NULL,
   `user_login` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -477,146 +360,67 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
   `display_name` varchar(250) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
---
--- Zrzut danych tabeli `wp_users`
---
-
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'gc_monwol', '$P$BKrYNHZK.lF211OjhzQNuEVV7C7S72/', 'gc_monwol', 'nissyre@gmail.com', '', '2017-09-07 18:11:04', '', 0, 'gc_monwol');
 
---
--- Indeksy dla zrzutów tabel
---
 
---
--- Indexes for table `wp_commentmeta`
---
 ALTER TABLE `wp_commentmeta`
  ADD PRIMARY KEY (`meta_id`), ADD KEY `comment_id` (`comment_id`), ADD KEY `meta_key` (`meta_key`(191));
 
---
--- Indexes for table `wp_comments`
---
 ALTER TABLE `wp_comments`
  ADD PRIMARY KEY (`comment_ID`), ADD KEY `comment_post_ID` (`comment_post_ID`), ADD KEY `comment_approved_date_gmt` (`comment_approved`,`comment_date_gmt`), ADD KEY `comment_date_gmt` (`comment_date_gmt`), ADD KEY `comment_parent` (`comment_parent`), ADD KEY `comment_author_email` (`comment_author_email`(10));
 
---
--- Indexes for table `wp_links`
---
 ALTER TABLE `wp_links`
  ADD PRIMARY KEY (`link_id`), ADD KEY `link_visible` (`link_visible`);
 
---
--- Indexes for table `wp_options`
---
 ALTER TABLE `wp_options`
  ADD PRIMARY KEY (`option_id`), ADD UNIQUE KEY `option_name` (`option_name`);
 
---
--- Indexes for table `wp_postmeta`
---
 ALTER TABLE `wp_postmeta`
  ADD PRIMARY KEY (`meta_id`), ADD KEY `post_id` (`post_id`), ADD KEY `meta_key` (`meta_key`(191));
 
---
--- Indexes for table `wp_posts`
---
 ALTER TABLE `wp_posts`
  ADD PRIMARY KEY (`ID`), ADD KEY `post_name` (`post_name`(191)), ADD KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`), ADD KEY `post_parent` (`post_parent`), ADD KEY `post_author` (`post_author`);
 
---
--- Indexes for table `wp_termmeta`
---
 ALTER TABLE `wp_termmeta`
  ADD PRIMARY KEY (`meta_id`), ADD KEY `term_id` (`term_id`), ADD KEY `meta_key` (`meta_key`(191));
 
---
--- Indexes for table `wp_terms`
---
 ALTER TABLE `wp_terms`
  ADD PRIMARY KEY (`term_id`), ADD KEY `slug` (`slug`(191)), ADD KEY `name` (`name`(191));
 
---
--- Indexes for table `wp_term_relationships`
---
 ALTER TABLE `wp_term_relationships`
  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`), ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
 
---
--- Indexes for table `wp_term_taxonomy`
---
 ALTER TABLE `wp_term_taxonomy`
  ADD PRIMARY KEY (`term_taxonomy_id`), ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`), ADD KEY `taxonomy` (`taxonomy`);
 
---
--- Indexes for table `wp_usermeta`
---
 ALTER TABLE `wp_usermeta`
  ADD PRIMARY KEY (`umeta_id`), ADD KEY `user_id` (`user_id`), ADD KEY `meta_key` (`meta_key`(191));
 
---
--- Indexes for table `wp_users`
---
 ALTER TABLE `wp_users`
  ADD PRIMARY KEY (`ID`), ADD KEY `user_login_key` (`user_login`), ADD KEY `user_nicename` (`user_nicename`), ADD KEY `user_email` (`user_email`);
 
---
--- AUTO_INCREMENT for dumped tables
---
 
---
--- AUTO_INCREMENT dla tabeli `wp_commentmeta`
---
 ALTER TABLE `wp_commentmeta`
 MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT dla tabeli `wp_comments`
---
 ALTER TABLE `wp_comments`
 MODIFY `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT dla tabeli `wp_links`
---
 ALTER TABLE `wp_links`
 MODIFY `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT dla tabeli `wp_options`
---
 ALTER TABLE `wp_options`
 MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=139;
---
--- AUTO_INCREMENT dla tabeli `wp_postmeta`
---
 ALTER TABLE `wp_postmeta`
 MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=45;
---
--- AUTO_INCREMENT dla tabeli `wp_posts`
---
 ALTER TABLE `wp_posts`
 MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
---
--- AUTO_INCREMENT dla tabeli `wp_termmeta`
---
 ALTER TABLE `wp_termmeta`
 MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT dla tabeli `wp_terms`
---
 ALTER TABLE `wp_terms`
 MODIFY `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT dla tabeli `wp_term_taxonomy`
---
 ALTER TABLE `wp_term_taxonomy`
 MODIFY `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT dla tabeli `wp_usermeta`
---
 ALTER TABLE `wp_usermeta`
 MODIFY `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
---
--- AUTO_INCREMENT dla tabeli `wp_users`
---
 ALTER TABLE `wp_users`
 MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
