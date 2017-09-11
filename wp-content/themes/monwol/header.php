@@ -11,9 +11,12 @@
         <div class="home-separator"></div>
         <div class="header">
             <div class="header-logo">
-               
+
             </div>
             <div class="header-menu">
+
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
             </div>
         </div>
 
