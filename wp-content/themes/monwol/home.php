@@ -2,6 +2,7 @@
 get_header();
 ?>
 <div class="content">
+    
     <?php
     $posts = get_posts();
     $side = 'left';
@@ -49,11 +50,11 @@ get_header();
         }
         ?>
 
-    </div>
-    <?php
-endforeach;
-?>
 
+        <?php
+    endforeach;
+    ?>
+</div>
 
 
 </div>
