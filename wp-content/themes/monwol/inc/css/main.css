@@ -16,6 +16,7 @@ body {
 .header-menu {
     width: 100%;
     font-weight: bold;  
+    padding-bottom: 50px;
 }
 
 .menu-main-container {    
@@ -69,39 +70,44 @@ body {
     width: 100%;   
     min-height: 350px;
     overflow: hidden;
+    color: #494948;
 }
+
+.home-post-content {
+    text-align: justify;
+}
+
 .home-post-content-left {
     overflow: hidden;
     float: left;
-    width:50%;
+    width:47%;
+    padding-right: 3%;
 }
 
 .home-post-content-right {
     overflow: hidden;
-    width:50%;
+    width:47%;
+    padding-left: 3%;
 }
 
 .home-post-img-left {
     overflow: hidden;
     float: left;
     width:50%;
+    border-radius: 2%;
 }
 
 .home-post-img-right {
     overflow: hidden;
     width:50%;
+    border-radius: 2%;
 }
-
-
-
-
 
 .footer {
     width: 95%;
     margin: 0 auto;
     overflow: hidden;
     padding-top: 20px;
-
 }
 
 
