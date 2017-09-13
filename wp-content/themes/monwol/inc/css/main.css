@@ -294,3 +294,35 @@ body {
     width:100%;
     height: auto;
 }
+
+.contact-info {
+}
+
+.contact-text {
+    text-align: center;
+    width: 50%;   
+    min-height: 350px;
+    overflow: hidden;
+    color: #494948;   
+    float: left;
+    padding-top: 5%;
+}
+.contact-text-header {
+    text-align: center;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+.contact-text-content {
+    text-align: center;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.contact-img {
+    width:50%;
+    height: auto;
+    border-radius: 2%;
+    overflow: hidden;
+    float: right;
+}
