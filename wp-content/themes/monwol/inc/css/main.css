@@ -182,35 +182,6 @@ body {
     font-weight:normal;
 }
 
-.about-us {
-    font-size: 20px;
-}
-
-.realization-post {
-    width: 100%;
-    display: flex;
-    border-radius: 1.2em;
-    border: solid 4px;
-    border-color: #494948;
-    padding: 15px 25px;
-}
-
-.realization-post-img {
-    overflow: hidden;
-    width: 35%;
-    float: left;
-}
-
-.realization-post-img img {
-    border-radius: 0.8em;
-}
-
-.realization-post-content {
-    padding-left: 15px;
-    width: 65%;
-    float: left;
-}
-
 .contact-form {
     display: table-row;
 }
@@ -325,4 +296,34 @@ body {
     border-radius: 2%;
     overflow: hidden;
     float: right;
+}
+
+.biography-post-text {
+    text-align: justify;
+    width: 100%;   
+    min-height: 350px;
+    overflow: hidden;
+    color: #494948;   
+    float: left;
+}
+.biography-post-header {
+    text-align: center;
+    overflow: hidden;
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.biography-post-content {
+    overflow: hidden;
+    text-align: justify;
+}
+
+.biography-post-img {
+    width:50%;
+    height: auto;
+    border-radius: 2%;
+    overflow: hidden;
+    float: left;
+    margin: 16px;
 }
