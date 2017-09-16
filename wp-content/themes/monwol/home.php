@@ -1,7 +1,9 @@
 <?php
 get_header();
 ?>
-<div class="content">
+
+<div class="content">    
+    
     
     <?php
     $posts = get_posts();

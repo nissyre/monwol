@@ -61,6 +61,13 @@ body {
     min-height: 400px;
 }
 
+.staff {
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
 .home-separator {
     height: 25px;
 }
