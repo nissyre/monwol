@@ -36,7 +36,7 @@ body {
 }
 
 .menu li {
-    width: 20%;
+    width: 25%;
     float: left;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -333,4 +333,63 @@ body {
     overflow: hidden;
     float: left;
     margin: 16px;
+}
+
+
+.footer_content {
+    margin: 0 auto;
+    width: 80%;
+    min-height: 30px;
+}
+
+.footer_left {
+    width:50%;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+}
+
+.footer_right {
+    width:50%;
+    overflow: hidden;
+    float: right;
+    text-align: right;
+}
+
+.news-post {
+    text-align: center;
+    width: 100%;   
+    min-height: 150px;
+    overflow: hidden;
+    color: #494948; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.news-post-img {
+    overflow: hidden;
+    width:25%;
+    border-radius: 2%;    
+    float: left;
+}
+
+.news-post-content-column {
+    width:75%;
+    float: right;
+}
+
+.news-post-header {
+    overflow: hidden;
+    float: left;
+    width:94%;
+    padding-left: 3%;    
+    padding-right: 3%;    
+}
+
+.news-post-content {
+    text-align: justify;
+    overflow: hidden;
+    width:94%;
+    padding-right: 3%;    
+    padding-left: 3%;
 }

@@ -11,13 +11,9 @@
                         <body <?php body_class(); ?>>
 
                             <div class="header">
-
                                 <div class="header-menu">
-
-                                    <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+                                    <?php wp_nav_menu(array('sort_column' => 'menu_order')); ?>
                                     <img class="staff" src="http://localhost/monwol/wp-content/themes/monwol/Treble_clef_with_empty_staff.svg">
                                 </div> 
-
-
                             </div>
 
