@@ -1,9 +1,10 @@
 body {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     background-color: white;
     color: gray;
     font-family: Cambria, Georgia, serif;
+    align-content: center;
 }
 
 .header {
@@ -14,14 +15,15 @@ body {
 }
 
 .header-menu {
-    width: 100%;
+    width: 80%;
     font-weight: bold;  
     padding-bottom: 50px;
+    margin: 0 auto;
 }
 
 .menu-main-container {    
     height: inherit;
-
+    width: 100%;
 }
 
 .menu {
@@ -36,7 +38,7 @@ body {
 }
 
 .menu li {
-    width: 25%;
+    width: 20%;
     float: left;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -48,11 +50,11 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #232f5c;
+    color: #494948;
 }
 
 .menu a:hover {
-    color: #494948;
+    color: #999
 }
 
 .content {
@@ -63,8 +65,7 @@ body {
 
 .staff {
     height: 30px;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: table;
 }
 
@@ -75,9 +76,28 @@ body {
 .home-post {
     text-align: center;
     width: 100%;   
-    min-height: 350px;
+    min-height: 250px;
     overflow: hidden;
     color: #494948;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 1%;    
+}
+
+.home-post-left {
+    text-align: center;
+    width: 100%;   
+    min-height: 250px;
+    overflow: hidden;
+    color: #494948;
+    background-color: #ebebe0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 1%;
 }
 
 .home-post-content {
@@ -95,6 +115,7 @@ body {
     overflow: hidden;
     width:47%;
     padding-left: 3%;
+    float: right;
 }
 
 .home-post-img-left {
@@ -340,6 +361,7 @@ body {
     margin: 0 auto;
     width: 80%;
     min-height: 30px;
+    color: #494948;    
 }
 
 .footer_left {
