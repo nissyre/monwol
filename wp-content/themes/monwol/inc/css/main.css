@@ -282,11 +282,6 @@ body {
 
 }
 
-.realization-post-img img {
-    max-width: 100%;
-    height: auto;
-}
-
 .auto-scale-img {
     width:100%;
     height: auto;
@@ -376,21 +371,35 @@ body {
     text-align: right;
 }
 
-.news-post {
+.news-post-white {
     text-align: center;
     width: 100%;   
-    min-height: 150px;
+    min-height: 100px;
     overflow: hidden;
     color: #494948; 
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 0.5%;    
+}
+
+.news-post-grey {
+    text-align: center;
+    width: 100%;   
+    min-height: 100px;
+    overflow: hidden;
+    color: #494948; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #ebebe0;
+    border-radius: 0.5%;    
 }
 
 .news-post-img {
     overflow: hidden;
-    width:25%;
+    width:24%;
     border-radius: 2%;    
     float: left;
+    margin-left: 1%;
 }
 
 .news-post-content-column {
