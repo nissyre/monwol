@@ -15,7 +15,7 @@ body {
 }
 
 .header-menu {
-    width: 80%;
+    width: 85%;
     font-weight: bold;  
     padding-bottom: 50px;
     margin: 0 auto;
@@ -75,7 +75,6 @@ body {
 
 .home-post {
     text-align: center;
-    width: 100%;   
     min-height: 250px;
     overflow: hidden;
     color: #494948;
@@ -88,7 +87,6 @@ body {
 
 .home-post-left {
     text-align: center;
-    width: 100%;   
     min-height: 250px;
     overflow: hidden;
     color: #494948;
@@ -132,7 +130,7 @@ body {
 }
 
 .footer {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     overflow: hidden;
     padding-top: 20px;
@@ -359,7 +357,7 @@ body {
 
 .footer_content {
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     min-height: 30px;
     color: #494948;    
 }
