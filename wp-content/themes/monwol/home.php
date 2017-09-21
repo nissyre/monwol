@@ -8,13 +8,24 @@ get_header();
     $posts = get_posts();
     $side = 'left';
     foreach ($posts as $p) : setup_postdata($p);
+        $link = get_post_meta($p->ID, 'youtubeLink', true);
         ?>
         <?php if ($side == 'left') { ?>
 
             <div class="home-post-left"> 
                 <div class="home-post-img-left">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($p->ID), 'single-post-thumbnail'); ?>
-                    <img class="auto-scale-img" src="<?php echo has_post_thumbnail($p->ID) ? $image[0] : $image; ?>"/>
+                    <?php
+                    if (empty($link))
+                    {
+                        $image = wp_get_attachment_image_src(get_post_thumbnail_id($p->ID), 'single-post-thumbnail'); ?>
+                        <img class="auto-scale-img" src="<?php echo has_post_thumbnail($p->ID) ? $image[0] : $image; ?>"/>
+                    <?php } 
+                    else
+                    {?>
+                        <iframe width="420" height="315" src="<?php echo $link; ?>">
+                        </iframe>                        
+                    <?php
+                    }?>
                 </div>
                 <div class="home-post-content-right">
                     <div class="home-post-header">
@@ -40,8 +51,18 @@ get_header();
                     </div>
                 </div>
                 <div class="home-post-img-right">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($p->ID), 'single-post-thumbnail'); ?>
-                    <img class="auto-scale-img" src="<?php echo has_post_thumbnail($p->ID) ? $image[0] : $image; ?>"/>
+                    <?php
+                    if (empty($link))
+                    {
+                        $image = wp_get_attachment_image_src(get_post_thumbnail_id($p->ID), 'single-post-thumbnail'); ?>
+                        <img class="auto-scale-img" src="<?php echo has_post_thumbnail($p->ID) ? $image[0] : $image; ?>"/>
+                    <?php } 
+                    else
+                    {?>
+                        <iframe width="420" height="315" src="<?php echo $link; ?>">
+                        </iframe>                        
+                    <?php
+                    }?>
                 </div>
 
             </div>  

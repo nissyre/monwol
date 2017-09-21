@@ -422,3 +422,55 @@ body {
     padding-right: 3%;    
     padding-left: 3%;
 }
+
+.media-post-white {
+    text-align: center;
+    width: 100%;   
+    min-height: 100px;
+    overflow: hidden;
+    color: #494948; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 0.5%;    
+}
+
+.media-post-grey {
+    text-align: center;
+    width: 100%;   
+    min-height: 100px;
+    overflow: hidden;
+    color: #494948; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #ebebe0;
+    border-radius: 0.5%;    
+}
+
+.media-post-img {
+    overflow: hidden;
+    width:24%;
+    border-radius: 2%;    
+    float: left;
+    margin-left: 1%;
+}
+
+.media-post-content-column {
+    width:75%;
+    float: right;
+}
+
+.media-post-header {
+    overflow: hidden;
+    float: left;
+    width:94%;
+    padding-left: 3%;    
+    padding-right: 3%;    
+}
+
+.media-post-content {
+    text-align: justify;
+    overflow: hidden;
+    width:94%;
+    padding-right: 3%;    
+    padding-left: 3%;
+}

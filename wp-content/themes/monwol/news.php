@@ -20,7 +20,9 @@ $args = array('category' => get_cat_ID('News'));
                         <?php echo $p->post_title; ?>
                     </div>
                     <div class="news-post-content">
-                        <?php the_content(); ?>
+                        <?php
+                        the_content();
+                        ?>
                     </div>
                 </div>
             </div>  
