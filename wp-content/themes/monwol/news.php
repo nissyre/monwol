@@ -5,9 +5,18 @@ $args = array('category' => get_cat_ID('News'));
 ?>
 
 <div class="content">    
+    <div class="news-title">
+        <?php
+            if (qtranxf_getLanguage() == 'pl') {
+                echo "Aktualności";
+            } else {
+                echo "News";
+            }
+            ?>
+    </div>
     <?php
     $posts = get_posts($args);
-    $color = 'white';
+    $color = 'grey';
     foreach ($posts as $p) : setup_postdata($p);
         if ($color == 'white') { ?>
             <div class="news-post-white"> 

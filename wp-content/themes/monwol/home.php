@@ -3,6 +3,15 @@ get_header();
 ?>
 
 <div class="content">    
+    <div class="media-title">
+    <?php
+    if (qtranxf_getLanguage() == 'pl') {
+        echo "Bieżące informacje";
+    } else {
+        echo "Actual News";
+    }
+    ?>
+    </div>
     
     <?php
     $posts = get_posts();
@@ -11,7 +20,6 @@ get_header();
         $link = get_post_meta($p->ID, 'youtubeLink', true);
         ?>
         <?php if ($side == 'left') { ?>
-
             <div class="home-post-left"> 
                 <div class="home-post-img-left">
                     <?php

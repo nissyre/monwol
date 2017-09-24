@@ -287,7 +287,9 @@ body {
     height: auto;
 }
 
+/*CONTACT*/
 .contact-info {
+    display: block;
 }
 
 .contact-text {
@@ -302,7 +304,8 @@ body {
 .contact-text-header {
     text-align: center;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 24px;
+    padding-bottom: 3%
 }
 
 .contact-text-content {
@@ -316,9 +319,68 @@ body {
     height: auto;
     border-radius: 2%;
     overflow: hidden;
-    float: right;
+    float: left;
+    margin-top: 2%;
 }
 
+.contact-form-title {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 2%;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+
+}
+
+.contact-form {
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#f3f3f3; 
+    width: 100%;
+
+}
+.contact-form label {
+    padding-left: 2%;
+    margin-top: 2%;
+    margin-left: 25%;
+    display:block;/* ustawiamy by label rozpoczynał się od nowej linii*/
+    margin-bottom:5px;/* dodajemy margines dolny */
+    font-weight:bold; /* pogrubiamy czcionkę */
+    text-transform: uppercase; /* zamieniamy wszystkie litery na duże */
+    font-size:12px; /* ustawiamy wielkość czcionki */
+    color:#555555; /* ustawiamy kolor czcionki */
+}
+
+.contact-form label.textarea-label {
+    margin-left: 5%;
+}
+
+.contact-form textarea,
+.contact-form input {
+    padding-left: 2%;
+    margin-left: 25%; /* dodajemy margines wewnątrz naszego pola */
+    margin-right: 25%; /* dodajemy margines wewnątrz naszego pola */
+    border-radius:3px; /* dodajemy zaokraglone rogi */
+    border:1px solid #ccc; /* dodajemy obramowanie */
+    margin-bottom:2%; /* dodajemy margines dolny */
+    width:50%; /* ustalamy szerokość */
+}
+.contact-form textarea {
+    min-height: 100px;
+    width:90%;
+    margin-left: 5%; /* dodajemy margines wewnątrz naszego pola */
+    margin-right: 5%;
+}
+.contact-form input#submit {
+    width: 30%;
+    display: block;
+    margin-left: 30%;
+}
+
+/*BIOGRAPHY*/
 .biography-post-text {
     text-align: justify;
     width: 100%;   
@@ -349,7 +411,7 @@ body {
     margin: 16px;
 }
 
-
+/*FOOTER*/
 .footer_content {
     margin: 0 auto;
     width: 85%;
@@ -369,6 +431,14 @@ body {
     overflow: hidden;
     float: right;
     text-align: right;
+}
+
+/*NEWS*/
+
+.news-title{
+    font-size: 24px;
+    padding-bottom: 4%;
+    text-align: center;
 }
 
 .news-post-white {
@@ -423,6 +493,14 @@ body {
     padding-left: 3%;
 }
 
+
+/*MEDIA*/
+.media-title{
+    font-size: 24px;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
 .media-post-white {
     text-align: center;
     width: 100%;   
@@ -432,6 +510,7 @@ body {
     padding-top: 1%;
     padding-bottom: 1%;
     border-radius: 0.5%;    
+    align-content: center;  
 }
 
 .media-post-grey {
@@ -448,15 +527,10 @@ body {
 
 .media-post-img {
     overflow: hidden;
-    width:24%;
-    border-radius: 2%;    
-    float: left;
-    margin-left: 1%;
-}
-
-.media-post-content-column {
     width:75%;
-    float: right;
+    border-radius: 2%;    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .media-post-header {
@@ -465,12 +539,46 @@ body {
     width:94%;
     padding-left: 3%;    
     padding-right: 3%;    
+    padding-bottom: 3%;    
+    font-size: 20px;
 }
 
 .media-post-content {
-    text-align: justify;
+    text-align: left;
     overflow: hidden;
     width:94%;
     padding-right: 3%;    
     padding-left: 3%;
+    padding-top: 2%;
+}
+
+.media-post-content p {
+    margin-top: 2px;    
+    margin-bottom: 2px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.media-post-content div a {
+    margin-top: 2px;    
+    margin-bottom: 2px;
+    width: 75% !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.media-link {
+    width: 75%; 
+    height: auto;
+    min-height: 450px;
+    border-radius: 2%;
+    border: 0;
+    float: inside;
+}
+
+.media-title{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 3%;
 }
