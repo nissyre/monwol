@@ -18,18 +18,7 @@ get_header(); ?>
 				<div class="post-navigation">
 					<?php nisarg_post_navigation(); ?>
 				</div>
-				<div class="post-comments">
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-
-					if ( ! comments_open() ) {
-						_e( 'Comments are closed.', 'nisarg' );
-					}
-					?>
-				</div>
+				
 				<?php endwhile; // End of the loop. ?>
 			</div><!-- #primary -->
 			<?php get_sidebar( 'sidebar-1' ); ?>
