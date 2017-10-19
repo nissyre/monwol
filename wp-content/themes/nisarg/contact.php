@@ -22,7 +22,7 @@ get_header();
 
                         <h1 class="entry-title"><?php the_title(); ?></h1>
 
-
+                        <div class="entry-meta"></div>
 
                     </header><!-- .entry-header -->
 
@@ -44,7 +44,7 @@ get_header();
                         <?php
                     }
                     ?>
-                    
+
                     <div class="entry-content">
                         <div class="contact-form"> 
                             <form>
@@ -58,25 +58,25 @@ get_header();
                                     ?>
                                 </label>
                                 <input name="name" placeholder=
-                                    "<?php
-                                        if (qtranxf_getLanguage() == 'pl') {
-                                            echo "Jan Kowalski";
-                                        } else {
-                                            echo "James Smith";
-                                        }
-                                    ?>"
-                                >
+                                       "<?php
+                                       if (qtranxf_getLanguage() == 'pl') {
+                                           echo "Jan Kowalski";
+                                       } else {
+                                           echo "James Smith";
+                                       }
+                                       ?>"
+                                       >
 
                                 <label>Email</label>
                                 <input name="email" type="email" placeholder=
-                                    "<?php
-                                        if (qtranxf_getLanguage() == 'pl') {
-                                            echo "twoj@adres.pl";
-                                        } else {
-                                            echo "your@adress.com";
-                                        }
-                                    ?>"
-                                >
+                                       "<?php
+                                       if (qtranxf_getLanguage() == 'pl') {
+                                           echo "twoj@adres.pl";
+                                       } else {
+                                           echo "your@adress.com";
+                                       }
+                                       ?>"
+                                       >
                                 <label>
                                     <?php
                                     if (qtranxf_getLanguage() == 'pl') {

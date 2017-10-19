@@ -813,6 +813,7 @@ img.wp-post-image{
 }
 /**
  * 3.2 Site Header
+ * b0bec5
  * ----------------------------------------------------------------------------
  */
 
@@ -1441,7 +1442,7 @@ img.wp-post-image{
 */
 
 .site-footer{
-    background-color: #222;
+    background-color: #b0bec5;
     color: white;
     min-height: 70px;
     font-size: 16px;
@@ -1450,7 +1451,8 @@ img.wp-post-image{
 }
 
 .site-info{
-    text-align: center;
+    text-align: right;
+    padding-right: 2%;
 }
 
 .site-footer a{
