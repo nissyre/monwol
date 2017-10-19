@@ -10,6 +10,7 @@
 ?>
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
+            TODO stopka
 		<div class="row site-info">
 			<?php echo '&copy; '.date( 'Y' ); ?>
 			<span class="sep"> | </span>

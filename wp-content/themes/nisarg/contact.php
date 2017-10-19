@@ -17,6 +17,15 @@ get_header();
             <main id="main" class="site-main" role="main">
 
                 <article id="post-<?php the_ID(); ?>"  <?php post_class('post-content'); ?>>
+                    <header class="entry-header">
+                        <span class="screen-reader-text"><?php the_title(); ?></span>
+
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
+
+
+
+                    </header><!-- .entry-header -->
+
                     <?php
                     if (is_sticky() && is_home() && !is_paged()) {
                         printf('<span class="sticky-post">%s</span>', __('Featured', 'nisarg'));
@@ -35,15 +44,7 @@ get_header();
                         <?php
                     }
                     ?>
-                    <header class="entry-header">
-                        <span class="screen-reader-text"><?php the_title(); ?></span>
-
-                        <h1 class="entry-title"><?php the_title(); ?></h1>
-
-
-
-                    </header><!-- .entry-header -->
-
+                    
                     <div class="entry-content">
                         <div class="contact-form"> 
                             <form>
@@ -56,11 +57,26 @@ get_header();
                                     }
                                     ?>
                                 </label>
-                                <input name="name" placeholder="Jan Kowalski">
+                                <input name="name" placeholder=
+                                    "<?php
+                                        if (qtranxf_getLanguage() == 'pl') {
+                                            echo "Jan Kowalski";
+                                        } else {
+                                            echo "James Smith";
+                                        }
+                                    ?>"
+                                >
 
                                 <label>Email</label>
-                                <input name="email" type="email" placeholder="twoj@adres.pl">
-
+                                <input name="email" type="email" placeholder=
+                                    "<?php
+                                        if (qtranxf_getLanguage() == 'pl') {
+                                            echo "twoj@adres.pl";
+                                        } else {
+                                            echo "your@adress.com";
+                                        }
+                                    ?>"
+                                >
                                 <label>
                                     <?php
                                     if (qtranxf_getLanguage() == 'pl') {
