@@ -16,7 +16,6 @@ get_header();
     <div class="row">
         <div id="primary" class="col-md-9 content-area">
             <main id="main" class="site-main" role="main">
-
                 <article id="post-<?php the_ID(); ?>"  <?php post_class('post-content'); ?>>
                     <header class="entry-header">
                         <span class="screen-reader-text"><?php the_title(); ?></span>
@@ -47,12 +46,11 @@ get_header();
                     ?>
 
                     <div class="entry-content">
-                        
-                        <?php while ( have_posts() ) : the_post(); ?>
-                        <?php
-                        
-                        the_content(); 
-                        ?>
+
+                        <?php while (have_posts()) : the_post(); ?>
+                            <?php
+                            the_content();
+                            ?>
                         <?php endwhile; // End of the loop. ?>
                         <?php
                         wp_link_pages(array(
@@ -65,6 +63,12 @@ get_header();
                     <footer class="entry-footer">
                         <?php nisarg_entry_footer(); ?>
                     </footer><!-- .entry-footer -->
+                    <div class="entry-content">
+                        <div>
+                            <p><a href="<?php echo get_template_directory_uri() ?>/files/Monika Wolinska biography.pdf" download>PDF - English version</a></p>
+                            <p><a href="<?php echo get_template_directory_uri() ?>/files/Monika Wolinska zyciorys.pdf" download>PDF - Polska wersja</a></p>
+                        </div>
+                    </div>
                 </article>
 
             </main><!-- #main -->

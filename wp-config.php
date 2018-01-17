@@ -23,13 +23,13 @@
 define('DB_NAME', 'nissyre');
 
 /** MySQL database username */
-define('DB_USER', 'nissyre');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Duch1712');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql.cba.pl');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

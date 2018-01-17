@@ -127,6 +127,7 @@ add_action( 'widgets_init', 'nisarg_widgets_init' );
 function nisarg_scripts() {
 	//Enqueue Styles
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.css' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/fonts/1.css' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css' );
 	wp_enqueue_style( 'nisarg-style', get_stylesheet_uri() );
 	//Enqueue Scripts
