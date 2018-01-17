@@ -193,10 +193,7 @@ if ( ! function_exists( 'nisarg_header_style' ) ) :
 			.site-description {
 				color: #<?php echo esc_attr( $header_text_color ); ?>;
 			}
-			.site-title::after{
-				background: #<?php echo esc_attr( $header_text_color ); ?>;
-				content:"";
-			}
+			
 		<?php endif; ?>
 		</style>
 		<?php

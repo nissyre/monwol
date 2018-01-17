@@ -11,7 +11,7 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 
     <div class="row site-info">
-        Email: info@monikawolinska.com
+        Email: <a href="mailto:info@monikawolinska.com" target="_top">info@monikawolinska.com</a>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
