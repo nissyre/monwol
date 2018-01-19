@@ -1714,3 +1714,24 @@ img.wp-post-image{
 }
 
 
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-flex > div {
+    flex: 1;
+}
+
+.container-flex-mid {
+    display: flex;
+    justify-content: center;
+}
+
+.container-flex > a {
+    flex: 1;
+}
+
+.container-flex-mid a {
+    margin: 0px;
+}
